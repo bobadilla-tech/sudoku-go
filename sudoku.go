@@ -9,9 +9,9 @@ import (
 type Difficulty int
 
 const (
-	Easy   Difficulty = iota
-	Medium Difficulty = iota
-	Hard   Difficulty = iota
+	Easy Difficulty = iota
+	Medium
+	Hard
 )
 
 // Grid is a 9×9 Sudoku board; 0 represents an empty cell.

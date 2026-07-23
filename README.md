@@ -34,7 +34,7 @@ fmt.Println(valid) // true
 ## Difficulty levels
 
 | Constant        | Givens | Empty cells |
-|-----------------|--------|-------------|
+| --------------- | ------ | ----------- |
 | `sudoku.Easy`   | 45     | 36          |
 | `sudoku.Medium` | 35     | 46          |
 | `sudoku.Hard`   | 29     | 52          |
@@ -49,7 +49,8 @@ fmt.Println(valid) // true
 6. Shuffle the three stacks.
 7. Remove cells according to difficulty.
 
-All transformations preserve Sudoku validity, so the result is always a valid puzzle with a known unique solution.
+All transformations preserve Sudoku validity, so the result is always a valid
+puzzle with a known unique solution.
 
 ## License
 
