@@ -50,7 +50,8 @@ fmt.Println(valid) // true
 7. Remove cells according to difficulty.
 
 All transformations preserve Sudoku validity, so the result is always a valid
-puzzle with a known unique solution.
+puzzle. Solution uniqueness verification is not currently enforced and is
+planned as a future improvement.
 
 ## License
 
