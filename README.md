@@ -1,4 +1,7 @@
-# sudoku-go
+# Sudoku Go
+
+[![codecov](https://codecov.io/gh/bobadilla-tech/sudoku-go/graph/badge.svg)](https://codecov.io/gh/bobadilla-tech/sudoku-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/bobadilla-tech/sudoku-go.svg)](https://pkg.go.dev/github.com/bobadilla-tech/sudoku-go)
 
 A Go library for generating and validating Sudoku puzzles.
 
@@ -16,6 +19,7 @@ go get github.com/bobadilla-tech/sudoku-go
 import sudoku "github.com/bobadilla-tech/sudoku-go"
 
 puzzle, err := sudoku.Generate(sudoku.Easy)
+
 if err != nil {
     log.Fatal(err)
 }
@@ -52,6 +56,12 @@ fmt.Println(valid) // true
 All transformations preserve Sudoku validity, so the result is always a valid
 puzzle. Solution uniqueness verification is not currently enforced and is
 planned as a future improvement.
+
+## Used in production
+
+This library powers the [Sudoku API](https://requiems.xyz/apis/sudoku) on
+[Requiems API](https://requiems.xyz), serving generated puzzles and solutions
+over HTTP.
 
 ## License
 
